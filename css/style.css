@@ -719,53 +719,16 @@ a {
 .resume-cta-card h2 { font-size: 2rem; margin-bottom: 0.5rem; }
 .resume-cta-card p { color: var(--text-muted); margin-bottom: 1.5rem; }
 
-/* Contact Form */
-.contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+/* Contact */
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .contact-info p { color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 2rem; }
 .contact-details div { margin-bottom: 0.75rem; font-size: 0.95rem; }
 .contact-details a { color: var(--primary-cyan); }
-
-.contact-form-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-.form-group label {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-}
-
-.form-group input, .form-group textarea {
-    background: var(--bg-sec);
-    border: 1px solid var(--border-color);
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    color: var(--text-main);
-    font-family: var(--font-body);
-    font-size: 0.95rem;
-}
-
-.form-group input:focus, .form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-cyan);
-}
-
-.form-status-msg {
-    font-size: 0.85rem;
-    margin-top: 0.5rem;
-}
 
 /* Footer */
 .footer {
@@ -805,7 +768,7 @@ a {
 
 /* Responsive Styles */
 @media (max-width: 992px) {
-    .hero-container, .two-col-grid, .contact-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-container, .two-col-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .project-card { grid-template-columns: 1fr; }
     .hero-section { padding-top: 8rem; }
 }
